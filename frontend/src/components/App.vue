@@ -1,9 +1,9 @@
 <template>
 
 
+	<img src="https://www.pregerance.fr/wp-content/uploads/2023/08/logo-pregerance-1.png" alt="Logo HubSpot" class="logo"/>
 	<h1 class="text-center">
-		<span class="hidden md:inline mr-2 text-blue-400">🏠</span>
-		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
+		<a href="/" @click.prevent="goHome" class="brand">🏠 Accueil</a>
 		<template v-if="documentIdShort">
 			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
 		</template>
