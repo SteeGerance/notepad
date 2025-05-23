@@ -2,13 +2,6 @@
     <div class="w-full max-w-screen-lg mx-auto">
 
         <div style="max-width:700px; margin:3em auto;">
-			<h1 class="mb-0">
-				<span class="hidden md:inline mr-1">&#x1F4C3;</span>
-				<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
-				<template v-if="documentIdShort">
-					<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
-				</template>
-			</h1>
             <h1 class="text-center"> 🔑 Connectez-vous avec une phrase secrète unique</h1>
 
             <input type="text" id="phrase" ref="query" placeholder="ex: Pregerance, l'IT au profit de votre croissance"

@@ -5,7 +5,13 @@
     <div class="hidden md:block flex-grow text-center items-center mb-0" v-html="banner"></div>
 
   </div>
-
+	<h1 class="mb-0">
+		<span class="hidden md:inline mr-1">&#x2302;</span>
+		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
+		<template v-if="documentIdShort">
+			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
+		</template>
+	</h1>
     <Editor v-if="state.authKey"></Editor>
     <Home v-else></Home>
 

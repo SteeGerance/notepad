@@ -1,14 +1,6 @@
 <template>
   <div class="w-full max-w-screen-lg mx-auto flex flex-col flex-grow mt-5 px-1 lg:px-0">
 
-	<h1 class="mb-0">
-		<span class="hidden md:inline mr-1">&#x1F4C3;</span>
-		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
-		<template v-if="documentIdShort">
-			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
-		</template>
-	</h1>
-	
     <div class="toolbar">
       <p>🔒 Tout le texte est automatiquement crypté et enregistré au fur et à mesure que vous tapez.</p>
     </div>
