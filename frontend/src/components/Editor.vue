@@ -108,7 +108,7 @@ export default {
     },
     deleteForever() {
 
-      if (confirm('Are you sure?? This action cannot be undone')) {
+      if (confirm('Confirmer la suppression ?')) {
 
             const key = store.state.authKey;
 
