@@ -2,8 +2,6 @@
 
   <div class="header" :style="{'background-image': `linear-gradient(to right, cornsilk, cornsilk, ${noteColor})`}">
 
-    <div class="hidden md:block flex-grow text-center items-center mb-0" v-html="banner"></div>
-
   </div>
 	<h1 class="mb-0">
 		<span class="hidden md:inline mr-1">&#x2302;</span>
