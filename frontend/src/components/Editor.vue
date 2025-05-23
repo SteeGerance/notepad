@@ -1,26 +1,34 @@
 <template>
   <div class="w-full max-w-screen-lg mx-auto flex flex-col flex-grow mt-5 px-1 lg:px-0">
 
+	<h1 class="mb-0">
+		<span class="hidden md:inline mr-1">&#x1F4C3;</span>
+		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
+		<template v-if="documentIdShort">
+			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
+		</template>
+	</h1>
+	
     <div class="toolbar">
-      <p>🔒 All text is automatically encrypted and saved as you type.</p>
+      <p>🔒 Tout le texte est automatiquement crypté et enregistré au fur et à mesure que vous tapez.</p>
     </div>
 
     <div id="plain_text_not_ace" class="flex flex-col flex-grow">
 
       <textarea @keyup="textKeyUp" @keydown="textKeyDown" @select="textSelect" @mouseup="textSelect" v-model="text"
-                placeholder="Nothing written here yet! Write something!" style="resize: none"
+                placeholder="Ecrivez ici." style="resize: none"
                 class="flex-grow"></textarea>
 
       <div class="flex justify-between mt-2 mb-5">
 
         <div class="status-bar">
-          Words: {{ wordCount }},
-          Characters: <span v-if="selectedCharCount">{{ selectedCharCount }}/</span>{{ charCount }},
-          Lines: {{ lineCount }}
+          Mots: {{ wordCount }},
+          Caractères: <span v-if="selectedCharCount">{{ selectedCharCount }}/</span>{{ charCount }},
+          Lignes: {{ lineCount }}
         </div>
 
         <div>
-          <a href="" @click.prevent="deleteForever" class="font-bold text-red-500">Delete Forever</a>
+          <a href="" @click.prevent="deleteForever" class="font-bold text-red-500">Détruire totalement</a>
         </div>
 
       </div>

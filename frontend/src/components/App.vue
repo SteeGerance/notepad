@@ -2,19 +2,7 @@
 
   <div class="header" :style="{'background-image': `linear-gradient(to right, cornsilk, cornsilk, ${noteColor})`}">
 
-    <h1 class="mb-0">
-        <span class="hidden md:inline mr-1">&#x1F4C3;</span>
-        <a href="/" @click.prevent="goHome" class="brand">notepad.mx</a>
-        <template v-if="documentIdShort">
-            <span class="mx-2">&ndash;</span>#{{ documentIdShort }}
-        </template>
-    </h1>
-
     <div class="hidden md:block flex-grow text-center items-center mb-0" v-html="banner"></div>
-
-      <nav class="nav-links hidden md:flex">
-          <a href="https://github.com/Athlon1600/notepad" target="_blank" rel="nofollow noopener noreferrer">GitHub Repo</a>
-      </nav>
 
   </div>
 
