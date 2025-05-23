@@ -4,7 +4,7 @@
         <div style="max-width:700px; margin:3em auto;">
             <h1 class="text-center"> 🔑 Connectez-vous avec une phrase secrète unique</h1>
 
-            <input type="text" id="phrase" ref="query" placeholder="ex: Pregerance au profit de votre croissance"
+            <input type="text" id="phrase" ref="query" placeholder="Ecrivez-ici votre phrase secrète"
                    autocomplete="off"
                    autocapitalize="off" @keydown.enter="login" v-model="phrase" :disabled="isBusy">
 
