@@ -1,24 +1,7 @@
 <template>
-	<style>
-	a:link, a:visited {
-	  color: grey;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	}
-
-    a:hover, a:active {
-      color: black;
-    }
-    
-    h1 {
-    	text-align:center;
-       }
-
-	</style>
 
 
-	<h1 class="mb-0">
+	<h1 class="text-center">
 		<span class="hidden md:inline mr-2 text-blue-400">🏠</span>
 		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
 		<template v-if="documentIdShort">
