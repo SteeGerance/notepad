@@ -1,10 +1,25 @@
 <template>
+	<style>
+	a:link, a:visited {
+	  color: grey;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	}
 
-  <div class="header" :style="{'background-image': `linear-gradient(to right, cornsilk, cornsilk, ${noteColor})`}">
+    a:hover, a:active {
+      color: black;
+    }
+    
+    h1 {
+    	text-align:center;
+       }
 
-  </div>
+	</style>
+
+
 	<h1 class="mb-0">
-		<span class="hidden md:inline mr-1">&#x2302;</span>
+		<span class="hidden md:inline mr-2 text-blue-400">🏠</span>
 		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
 		<template v-if="documentIdShort">
 			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
