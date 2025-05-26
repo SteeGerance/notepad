@@ -1,9 +1,6 @@
 <template>
   <div class="w-full max-w-screen-lg mx-auto flex flex-col flex-grow mt-5 px-1 lg:px-0">
 
-    <div class="toolbar">
-      <p>🔒 Tout le texte est automatiquement crypté et enregistré au fur et à mesure que vous tapez.</p>
-    </div>
 
     <div id="plain_text_not_ace" class="flex flex-col flex-grow">
 
