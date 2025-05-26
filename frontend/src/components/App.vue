@@ -1,12 +1,11 @@
 <template>
 
-
-	<h1 class="text-center">
+	<h2 class="text-center">
 		<a href="/" @click.prevent="goHome" class="brand">Accueil</a>
 		<template v-if="documentIdShort">
 			<span class="mx-2">&ndash;</span>#{{ documentIdShort }}
 		</template>
-	</h1>
+	</h2>
     <Editor v-if="state.authKey"></Editor>
     <Home v-else></Home>
 

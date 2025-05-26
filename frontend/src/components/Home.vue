@@ -2,14 +2,11 @@
     <div class="w-full max-w-screen-lg mx-auto">
 
         <div style="max-width:700px; margin:3em auto;">
-            <h1 class="text-center">Connectez-vous avec une phrase secrète unique</h1>
 
             <input type="text" id="phrase" ref="query" placeholder="Ecrivez-ici votre phrase secrète"
                    autocomplete="off"
                    autocapitalize="off" @keydown.enter="login" v-model="phrase" :disabled="isBusy">
 
-            <div class="text-muted mt-2">Vous pouvez le faire aussi court que vous le souhaitez, mais afin de le rendre plus difficile à deviner pour les autres (ou de force brute), faites-le au moins avec 4 mots.
-            </div>
 
             <p class="my-5">
                 <small class="text-muted">Caractères: {{ passLen }}
